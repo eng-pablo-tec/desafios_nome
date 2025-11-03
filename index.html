@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini IDE com Desafios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini IDE de Personagens</h1>
+  <div class="container">
+    <!-- Janela de desafios -->
+    <div class="panel" id="desafios">
+      <h2>Desafios</h2>
+      <p id="personagem">Clique em "Próximo desafio" para começar!</p>
+      <button onclick="novoDesafio()">Próximo desafio</button>
+    </div>
+
+    <!-- Mini IDE -->
+    <div class="panel" id="ide">
+      <h2>Editor JavaScript</h2>
+      <textarea id="code" placeholder="Escreva seu código JS aqui..."></textarea>
+      <button onclick="executarCodigo()">Executar</button>
+    </div>
+
+    <!-- Console -->
+    <div class="panel" id="console">
+      <h2>Console</h2>
+      <div id="console-output"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
